@@ -1,0 +1,32 @@
+git init  初始化项目
+git remote add 远程名 远程地址
+git checkout -b 分支名  新建分支
+git checkout branchName 选择分支
+git status 查看当前git 的状态
+git log 查看git的详细交日志
+git show 查看当前分支的提交详细日志
+git show commit号  查看具体某个分支的详细提交
+git config --global credential.helper store 把用户名和密码缓存到本地
+git fetch remoteName  抓取远程的修改到本地
+git merge remoteName/remoteBranch 远程的某个分支合并到本地分支
+git pull remoteName remoteBranch 远程的某个分支合并到本地分支
+git add . 提交所有修改到本地
+git commit -a -m "" 提交所有修改并携带注释
+git checout . 撤销本次所做的修改
+
+1.提交修改到本地仓库
+2.从远程仓库抓去最新的修改到主分支
+3.把主分支的修改rebase到自己的子分支
+4.如果有冲突则处理冲突
+5.如果有冲突则add一次  继续上一次的重定向（rebasae）
+6.切换到主分支并把子分支的修改内容重定向到主分支
+7.把主分支的修改提交套远程仓库
+
+.gitignore
+
+
+多个人使用git，每个人保证一个主分支与远程分支保持同步，并且不在主分支上做操作，只在本地的子分支上做修改。
+
+1 12:00 commit 先提交
+
+2 11:50 commit 后提交
